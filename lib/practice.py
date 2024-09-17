@@ -122,3 +122,41 @@ print(names3)
 #using the assignment operator
 names3.update(name5='Kate', name6='Meghan')
 print(names3)
+
+######################################################################################
+#Iterating through dictionaries
+
+x = {
+    "key1": "val1",
+    "key2": "val2",
+    "key3": "val3",
+    "key4": "val4"
+}
+
+#looping
+for key in x:
+    print('loop key', key)
+
+for value in x:
+    print('loop value', x[value])
+
+#List comprehension
+y = [key for key in x]
+print(y)
+
+z = [x[key] for key in x]
+print(z)
+
+#Using dict.items() allows us to get a list of tuples with both the key and the value returned or accessing the key or value independently
+
+#Getting a list of tuples of the key/value pais
+a = [item for item in x.items()]
+print(a)
+
+#Getting only our objects keys
+b = [key for key, value in x.items()]
+print(b)
+
+#Getting only our objects values
+c = [value for key, value in x.items()]
+print(c)
