@@ -96,3 +96,29 @@ print(names2)
 #add and update fields simultaneusly
 names2.update({"name1": "My name changed", "name5": "My name Is John I'm new"})
 print(names2)
+
+
+names3 = {
+    "name1": "Henry"
+}
+print(names3)
+
+#passing in an arrray of arrays
+names3.update([["name1", "William"], ["name2", "Elizabeth"]])
+print(names3)
+
+#passing in an array of tuples
+names3.update([('name2', 'Diana'), ('name3', 'Henry')])
+print(names3)
+
+#passing in a tuple of arrays
+names3.update((['name3', 'Elizabeth'], ['name4', 'George']))
+print(names3)
+
+#passing in a tuple of tuples
+names3.update((('name4', 'Henry'), ('name5', 'Megan')))
+print(names3)
+
+#using the assignment operator
+names3.update(name5='Kate', name6='Meghan')
+print(names3)
