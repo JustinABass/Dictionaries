@@ -62,14 +62,37 @@ get_student_grade_dict_map('Angela')
 ######################################################################################
 #Setting data (update/add) with bracket notation
 
-data = {
+names = {
     "name1": "Mickie",
     "name2": "Trish"
 }
-print(data)
+print(names)
 
-data["name1"] = "Ashley"
-print(data)
+#updating
+names["name1"] = "Ashley"
+print(names)
 
-data["name3"] = "Torrie"
-print(data)
+#adding
+names["name3"] = "Torrie"
+print(names)
+
+######################################################################################
+#Setting data with dict.update()
+
+names2 = {
+    "name1": "Lori",
+    "name2": "Cash",
+}
+print(names2)
+
+#update multiple fileds
+names2.update({"name1": "Dash", "name2": "Tkor"})
+print(names2)
+
+#add multiple fields
+names2.update({"name3": "Kimo", "name4": "Rubina"})
+print(names2)
+
+#add and update fields simultaneusly
+names2.update({"name1": "My name changed", "name5": "My name Is John I'm new"})
+print(names2)
