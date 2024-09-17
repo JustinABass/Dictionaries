@@ -2,6 +2,8 @@
 #Dictionaries are best used when there is a fixed name or value that we want to associate with a piece of data.
 #An excellent analogy for a Python dictionary is...a dictionary!
 
+######################################################################################
+#Getting data in dictonary with bracket notation
 states_cities = {
     "New_York": "Brooklyn",
     "Washington": "Seattle",
@@ -42,9 +44,11 @@ def get_size_dict_map(size):
     print(size_chart[size])
 get_size_dict_map("tall")
 
+######################################################################################
+#Getting data with .get() method
 
 #Using dict.get() method which allows us to avoid KeyErrors when a given argument does not match an immutable key in our dictionary
-#it also allows us to recieve a value back if the given argument does not match a key, None - or a value provided as a optional second argument
+#It also allows us to recieve a value back if the given argument does not match a key, None - or a value provided as a optional second argument
 #in the dict.get(arguement1, optional argument2) method
 def get_student_grade_dict_map(student):
     student_dic = {
@@ -54,3 +58,18 @@ def get_student_grade_dict_map(student):
     }
     print(student_dic.get(student, "Please enter an existing enrolled student."))
 get_student_grade_dict_map('Angela')
+
+######################################################################################
+#Setting data (update/add) with bracket notation
+
+data = {
+    "name1": "Mickie",
+    "name2": "Trish"
+}
+print(data)
+
+data["name1"] = "Ashley"
+print(data)
+
+data["name3"] = "Torrie"
+print(data)
